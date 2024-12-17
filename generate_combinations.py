@@ -5,7 +5,7 @@ def generate_combinations(number):
     digits = str(number)
     permutations = list(itertools.permutations(digits))
     combinations = [''.join(p) for p in permutations]
-    combinations = list(set(combinations))  # Remove duplicates
+    combinations = list(set(combinations))
     return combinations
 
 if __name__ == "__main__":
